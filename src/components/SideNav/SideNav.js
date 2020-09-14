@@ -1,5 +1,6 @@
 import React from 'react'
 import "./sideNav.css";
+import bala from '../../image/bala.jpg'
 
 
 const SideNav = ({handleSectionClick}) => {
@@ -8,7 +9,7 @@ const SideNav = ({handleSectionClick}) => {
         <div className="side-nav">
                 <img
                 className= "avatar"
-                src="https://picsum.photos/id/0/5616/3744"
+                src={bala}
                 alt="avatar"
                 />
             
