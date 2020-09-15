@@ -59,7 +59,7 @@ class App extends Component{
      
       </div>
       <div className="body">
-      <Particles color="red"/>
+      <Particles type="cirlces" radius={2} g={0} num={0} bg={false}/>
       </div>
 
      </div>   

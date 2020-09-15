@@ -4,7 +4,7 @@ import bala from '../../image/bala.jpg'
 import { useSpring, animated } from 'react-spring';
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+const trans = (x, y, s) => `perspective(1200px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const SideNav = ({ handleSectionClick }) => {
 
@@ -24,7 +24,7 @@ const SideNav = ({ handleSectionClick }) => {
             <animated.div
                 className="sections-list"
                 onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-                onMouseLeave={() => set({ xys: [9,5,1] })}
+                onMouseLeave={() => set({ xys: [0,-10,1] })}
                 style={{ transform: props.xys.interpolate(trans) }}
             >
                 <p className="section-list-element" onClick={() => handleSectionClick("about")}>About Me</p>
