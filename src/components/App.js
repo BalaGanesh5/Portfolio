@@ -58,8 +58,8 @@ class App extends Component{
      
      
       </div>
-      <div className="particles">
-          
+      <div className="body">
+      <Particles color="red"/>
       </div>
 
      </div>   
